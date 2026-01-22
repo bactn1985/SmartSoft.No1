@@ -1,0 +1,35 @@
+SmartSoft - Liên Hệ Khách Hàng
+
+Hướng dẫn sử dụng:
+1. Tạo Google Sheet mới với tên "SmartSoft - Liên Hệ Khách Hàng"
+2. Copy dòng header bên dưới vào dòng đầu tiên (A1:F1)
+3. Format dòng header: Bold, background color
+4. Freeze dòng đầu tiên (View > Freeze > 1 row)
+
+HEADER (Copy vào dòng 1):
+Timestamp	Họ và Tên	Email	Số Điện Thoại	Sản Phẩm	Nhu Cầu
+
+Sau khi tạo xong, làm theo hướng dẫn trong file GOOGLE_SHEETS_SETUP.md để kết nối với website.
+
+---
+
+MẪU DỮ LIỆU (cho test):
+
+2026-01-19 20:00:00	Nguyễn Văn A	nguyenvana@example.com	0987654321	Phần mềm OCR	Cần tư vấn về giải pháp OCR cho công ty
+2026-01-19 20:15:00	Trần Thị B	tranthib@example.com	0912345678	Chatbot AI	Muốn triển khai chatbot cho website
+2026-01-19 20:30:00	Lê Văn C	levanc@example.com	0909876543	Quản lý sản xuất	Cần phần mềm quản lý cho nhà máy
+
+---
+
+CÔNG THỨC HỮU ÍCH:
+
+1. Đếm số lượng liên hệ:
+=COUNTA(A2:A) - 1
+
+2. Lọc theo sản phẩm:
+=COUNTIF(E2:E, "Phần mềm OCR")
+
+3. Liên hệ trong hôm nay:
+=COUNTIF(A2:A, ">="&TODAY())
+
+4. Format timestamp tự động (đã được Apps Script xử lý)
