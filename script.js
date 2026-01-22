@@ -88,7 +88,7 @@ const contactForm = document.getElementById('contactForm');
 
 // QUAN TRỌNG: Thay YOUR_GOOGLE_SCRIPT_URL_HERE bằng URL từ Google Apps Script deployment
 // URL có dạng: https://script.google.com/macros/s/AKfycby.../exec
-const GOOGLE_SCRIPT_URL = 'YOUR_GOOGLE_SCRIPT_URL_HERE';
+const GOOGLE_SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbzDg9bf9yPgF0rMOhcRwrwdr7OZ3N5kQzrSwlEwRCwNA2a7ot6tMECJo69al3OULmjzlQ/exec';
 
 contactForm.addEventListener('submit', async (e) => {
     e.preventDefault();
@@ -232,3 +232,4 @@ document.addEventListener('DOMContentLoaded', () => {
         document.body.style.opacity = '1';
     }, 100);
 });
+
